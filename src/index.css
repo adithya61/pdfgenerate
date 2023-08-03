@@ -1,13 +1,125 @@
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* * Generic */
+
+.btn {
+  border: none;
+  /* vertical, horizontal */
+  color: #ffff;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background-color: dodgerblue;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.list {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.table {
+  width: 100%;
+}
+
+table,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border-right: 1px solid black;
+}
+
+/* * Container */
+
+.container {
+  border: 5px double black;
+  width: 100%;
+  max-width: 80vw;
+  background-color: #ffff;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.heading {
+  width: 50%;
+  padding-left: 1rem;
+}
+
+.org {
+  margin: 0;
+}
+
+.name {
+  font-size: 1.7rem;
+}
+
+.list.grid {
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: auto 1fr;
+}
+
+.list__item {
+}
+
+/* * Table */
+
+.bottom {
+  border-bottom: 1px solid black;
+}
+
+.foot_1 {
+  border-top: 1px solid black;
+}
+.foot_2 {
+  border-top: 1px solid black;
+  border-right: none;
+  border-bottom: 1px solid;
+}
+.bill-amount {
+  border-left: 1px solid black;
+  text-align: right;
+}
+
+.rupee {
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+.btn--download {
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 3px;
 }
