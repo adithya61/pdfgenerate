@@ -123,3 +123,9 @@ td {
   padding: 1rem;
   border-radius: 3px;
 }
+
+.doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

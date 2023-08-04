@@ -24,7 +24,7 @@ const Bill = () => {
 
   return (
     <>
-      <div>
+      <div className="doc">
         {/* Hospital */}
         <div ref={pdfRef} className="container">
           <div className="header">
@@ -141,10 +141,10 @@ const Bill = () => {
               </td>
             </tr>
           </table>
-          <button className="btn btn--download" onClick={printDocument}>
-            Download
-          </button>
         </div>
+        <button className="btn btn--download" onClick={printDocument}>
+          Download
+        </button>
       </div>
     </>
   );
